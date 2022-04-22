@@ -2,79 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Time Tracking Dashboard</title>
 </head>
 <body>
+  <div class="container">
+    <main class="content">
+      <div class="content-person">
+        <div class="content-person-wrapper">
+          <img src="images/image-jeremy.png" alt="Jeremy" class="image">
+          <div class="content-person-info">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
 
-  Report for
-  Jeremy Robson
+        <div class="content-options">
+          <ul class="content-list">
+            <li class="content-item">
+              <a href="" class="content-link">Daily</a>
+            </li>
+            <li class="content-item">
+              <a href="" class="content-link">Weekly</a>
+            </li>
+            <li class="content-item">
+              <a href="" class="content-link">Monthly</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="content-box" id="work">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Work</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="content-box-duration">
+          <p class="content-box-hour">32hrs</p>
+          <p class="content-box-previous">Last Week: -36hrs</p>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="content-box" id="play">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Play</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+        <div class="content-box-duration">
+          <p class="content-box-hour">10hrs</p>
+          <p class="content-box-previous">Last Week: -8hrs</p>
+        </div>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <div class="content-box" id="study">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Study</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <div class="content-box-duration">
+          <p class="content-box-hour">4hrs</p>
+          <p class="content-box-previous">Last Week: -7hrs</p>
+        </div>
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <div class="content-box" id="exercise">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Exercise</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="content-box-duration">
+          <p class="content-box-hour">4hrs</p>
+          <p class="content-box-previous">Last Week: -5hrs</p>
+        </div>
+      </div>
+
+      <div class="content-box" id="social">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Social</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="content-box-duration">
+          <p class="content-box-hour">5hrs</p>
+          <p class="content-box-previous">Last Week: -10hrs</p>
+        </div>
+      </div>
+
+      <div class="content-box" id="care">
+        <div class="content-box-wrapper">
+          <h2 class="content-box-title">Self Care</h2>
+          <a href="#" class="content_box-elipsis" aria-label="elipsis for options">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="content-box-duration">
+          <p class="content-box-hour">2hrs</p>
+          <p class="content-box-previous">Last Week: -2hrs</p>
+        </div>
+      </div>
+
+    </main>
   </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Quang Hung Pham</a>.
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
