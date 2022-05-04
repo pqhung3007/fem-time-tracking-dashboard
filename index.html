@@ -4,40 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/main.css">
   <title>Time Tracking Dashboard</title>
 </head>
 <body>
   <div class="container">
     <main class="content">
-      <div class="content-person">
-        <div class="content-person-wrapper">
-          <img src="images/image-jeremy.png" alt="Jeremy" class="image">
-          <div class="content-person-wrapper-info">
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+      <div class="content__person">
+        <div class="content__person-wrapper">
+          <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="content__person-img" />
+          <div class="content__person-info">
+            <p class="content__person-report fade-in-anim">Report for</p>
+            <h1 class="content__person-name fade-in-anim-1s">
+              Jeremy Robson
+            </h1>
           </div>
         </div>
 
-        <div class="content-options">
-          <ul class="content-list">
-            <li class="content-item">
-              <a href="" class="content-link">Daily</a>
+        <div class="content__options">
+          <ul class="content__list js-list">
+            <li class="content__item">
+              <a href="#" class="content__link content__link--active js-link"> Daily </a>
             </li>
-            <li class="content-item">
-              <a href="" class="content-link">Weekly</a>
+            <li class="content__item">
+              <a href="#" class="content__link js-link">
+                Weekly
+              </a>
             </li>
-            <li class="content-item">
-              <a href="" class="content-link">Monthly</a>
+            <li class="content__item">
+              <a href="#" class="content__link js-link"> Monthly </a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="content-box" id="work">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Work</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--work">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -46,16 +52,17 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">32hrs</p>
-          <p class="content-box-previous">Last Week: -36hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
 
-      <div class="content-box" id="play">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Play</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--play">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -64,16 +71,17 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">10hrs</p>
-          <p class="content-box-previous">Last Week: -8hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
 
-      <div class="content-box" id="study">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Study</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--study">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -82,16 +90,17 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">4hrs</p>
-          <p class="content-box-previous">Last Week: -7hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
 
-      <div class="content-box" id="exercise">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Exercise</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--exercise">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -100,16 +109,17 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">4hrs</p>
-          <p class="content-box-previous">Last Week: -5hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
 
-      <div class="content-box" id="social">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Social</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--social">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -118,16 +128,17 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">5hrs</p>
-          <p class="content-box-previous">Last Week: -10hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
 
-      <div class="content-box" id="care">
-        <div class="content-box-wrapper">
-          <h2 class="content-box-title">Self Care</h2>
-          <a href="#" class="content-box-elipsis" aria-label="elipsis for options">
+      <div class="content__box content__box--self-care">
+        <div class="content__box-title-wrapper fade-in-anim">
+          <h2 class="content__box-title js-title"></h2>
+
+          <a href="#" class="content__box-elipsis" aria-label="elipsis for options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -136,19 +147,21 @@
           </a>
         </div>
 
-        <div class="content-box-duration">
-          <p class="content-box-hour">2hrs</p>
-          <p class="content-box-previous">Last Week: -2hrs</p>
+        <div class="content__box-hours fade-in-anim-1s">
+          <p class="content__box-hour js-current"></p>
+          <p class="content__box-date js-previous"></p>
         </div>
       </div>
-
     </main>
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Quang Hung Pham</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by
+    <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by
+    <a class="attribution__link" href="https://github.com/kens-visuals" target="_blank">Quang Hung Pham</a>.
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
